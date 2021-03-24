@@ -1,0 +1,22 @@
+{
+    "name": "my-assistant",
+    "version": "0.0.1",
+    "description": "A Sample assistant",
+    "author": "abhinavkumar985",
+    "engines": {
+        "node": "12"
+    },
+    "scripts": {
+        "dev": "nodemon --inspect app.js",
+        "start": "node app.js",
+        "tunnel": "ngrok http 8080"
+    },
+    "dependencies": { 
+        "express": "*"
+    },
+    "devDependencies": {
+        "ngrok": "^3.1.0",
+        "nodemon": "^1.18.9",
+        "standard": "^12.0.1"
+    }
+}
