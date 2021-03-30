@@ -11,8 +11,12 @@
         "start": "node app.js",
         "tunnel": "ngrok http 8080"
     },
-    "dependencies": { 
-        "express": "*"
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "*",
+        "express-session": "^1.17.1",
+        "mongodb": "^3.6.5",
+        "mongoose": "^5.12.2"
     },
     "devDependencies": {
         "ngrok": "^3.1.0",

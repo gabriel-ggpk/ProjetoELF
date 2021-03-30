@@ -1,0 +1,14 @@
+body{
+    background-color: #444
+}
+div{
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(146, 168, 207);
+}
+h4{
+    color: red;
+}
