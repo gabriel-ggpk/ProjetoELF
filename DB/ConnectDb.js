@@ -1,7 +1,8 @@
-const uri = "mongodb+srv://gabrielHCS:BlackBerry10@cluster0.sqgb8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 const connectDB = async () => {
-  await mongoose.connect(uri, {
+  await mongoose.connect(process.env.mongoUri, {
     useUnifiedTopology: true,
     useNewUrlParser: true
   });

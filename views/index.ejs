@@ -17,6 +17,7 @@
         <td><%= post.theme %> </td>
         <td><a href=<%=post.link%>><%=post.link%></a></td>
         <td id="button"><a href=<%="posts/"+post.id %> ><button type="button">Deletar</button></a></td>
+        <td id="button"><a href=<%="posts/"+post.id+"/edit" %> ><button type="button">Atualizar</button></a></td>
       </tr>
      
     <% }) %>
@@ -24,7 +25,7 @@
       <td><input type="text" id="title" name="title"form="postForm"></td>
       <td><input type="text" id="description" name="description"form="postForm"></td>
       <td><select id="theme" name="theme"form="postForm">
-        <option value="Esportes">Esportes</option>
+        <option value="Esporte">Esporte</option>
         <option value="Política">Política</option>
         <option value="Entretenimento">Entretenimento</option>
         <option value="Famosos">Famosos</option>

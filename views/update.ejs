@@ -1,0 +1,41 @@
+<head><link href= "/update.css" rel="stylesheet"/></head>
+<body>
+  <form action=<%="edit"%> id="postForm" method="post"></form>
+  <table>
+    <tr>
+      <th>Image URL</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th id="theme">Theme</th>
+      <th>Link</th>
+    </tr>
+    
+      <tr>
+        <td><a href=<%=dbPost.imgUrl%>><img src=<%=dbPost.imgUrl%> ></a></td>
+        <td><%= dbPost.title %> </td>
+        <td><%= dbPost.description %> </td>
+        <td><%= dbPost.theme %> </td>
+        <td><a href=<%=dbPost.link%>><%=dbPost.link%></a></td>
+       
+      </tr>
+     
+   
+    <tr> <td><input type="text" id="imgUrl" name="imgUrl"form="postForm" value=<%=dbPost.imgUrl%> ></td>
+      <td><input type="text" id="title" name="title"form="postForm" value="<%= dbPost.title %>"  ></td>
+      <td><input type="text" id="description" name="description"form="postForm" value="<%=dbPost.description%>" ></td>
+      <td><select id="theme" name="theme"form="postForm">
+        <option value="none" selected disabled hidden>
+        </option>
+        <option value="Esporte">Esporte</option>
+        <option value="Política">Política</option>
+        <option value="Entretenimento">Entretenimento</option>
+        <option value="Famosos">Famosos</option>
+      </select></td>
+      <td><input type="text"id="link" name="link"form="postForm" value=<%=dbPost.link%> ></td>
+      <td  id="button"><input type="submit" value="Atualizar" form="postForm"/></td>
+   </tr>
+    </table>
+    
+     
+     
+</body>

@@ -12,6 +12,7 @@
         "tunnel": "ngrok http 8080"
     },
     "dependencies": {
+        "dotenv": "^8.2.0",
         "ejs": "^3.1.6",
         "express": "*",
         "express-session": "^1.17.1",

@@ -1,0 +1,28 @@
+body{
+    background-color: #444;
+}
+table ,form{
+    width: 70%;
+   margin:auto;
+   max-width: 70% ;
+}
+th .theme{
+   font-size: 200%
+}
+input,select{
+    width: 100%;
+}
+#button{
+    background-color: #444;
+    border: none;
+}
+th,td{
+    background-color: rgb(233, 233, 233);
+    border: 2px solid black;
+    min-width: 15%;
+}
+
+img{
+    max-width:50px;
+    width: 100%;
+}
